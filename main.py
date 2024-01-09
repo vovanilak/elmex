@@ -15,7 +15,7 @@ import board
 from aiogram.types import Message, FSInputFile
 
 load_dotenv()
-TOKEN=os.getenv('TOKEN_INFO')
+TOKEN=os.getenv('TOKEN_INFO_OF')
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 router = Router()
@@ -166,7 +166,7 @@ async def error_product(message: Message,
 
 @router.message()
 async def error_main(message: Message, state: FSMContext):
-    await state.set_state(default_state)
+    await state.set_state(Menu.layer2)
     await message.answer(ru['error_main'])
     await message.answer(
         text=ru['mes_main'],

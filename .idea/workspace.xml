@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8264de7e-ba9b-4cb2-af06-5d36748bcd7d" name="Changes" comment="Start">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Push.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Винт1.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Винт2.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Винтовая.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Источники_питания.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Клемы.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Платы.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Пружинные.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/РЕЛЕ.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Таймеры.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Трансформаторы.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Щелчковые_клеммы.PNG" afterDir="false" />
+    <list default="true" id="8264de7e-ba9b-4cb2-af06-5d36748bcd7d" name="Changes" comment="ready info bot">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,11 +119,20 @@
       <option name="project" value="LOCAL" />
       <updated>1704745458337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ready info bot">
+      <option name="closed" value="true" />
+      <created>1704762934770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704762934770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start" />
+    <MESSAGE value="ready info bot" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready info bot" />
   </component>
 </project>
