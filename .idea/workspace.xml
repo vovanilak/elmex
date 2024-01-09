@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8264de7e-ba9b-4cb2-af06-5d36748bcd7d" name="Changes" comment="Start" />
+    <list default="true" id="8264de7e-ba9b-4cb2-af06-5d36748bcd7d" name="Changes" comment="Start">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/board.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Push.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Винт1.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Винт2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Винтовая.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Источники_питания.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Клемы.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Платы.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Пружинные.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/РЕЛЕ.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Таймеры.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Трансформаторы.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Щелчковые_клеммы.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,9 +39,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2agdpqubneAbzKdfC4nVXMD4hFS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -31,13 +53,19 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.utils.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/vova/elmex/img",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -98,22 +126,19 @@
       <option name="project" value="LOCAL" />
       <updated>1704745278479</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Start">
+      <option name="closed" value="true" />
+      <created>1704745458337</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704745458337</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
     <option name="LAST_COMMIT_MESSAGE" value="Start" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
