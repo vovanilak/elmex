@@ -9,6 +9,7 @@ from aiogram import Bot, Dispatcher, types, filters, F, Router
 from aiogram.filters import Command, or_f, StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State, default_state
+from aiogram.methods import DeleteWebhook
 from dct import *
 import utils
 import board
@@ -173,7 +174,9 @@ async def error_main(message: Message, state: FSMContext):
         reply_markup=board.main.as_markup(resize_keyboard=True)
     )
 
+
 async def main():
+    await bot(DeleteWebhook(drop_pending_updates=True))
     dp.include_router(router)
     await dp.start_polling(bot)
 
