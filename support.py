@@ -10,23 +10,22 @@ from aiogram.methods import DeleteWebhook
 
 load_dotenv()
 
-TOKEN=os.getenv('TOKEN_INFO')
-admin_chat_id = os.getenv('MYADMIN')
-print(admin_chat_id)
+TOKEN=os.getenv('TOKEN_SUP')
+admin_chat_id = int(os.getenv('ADMIN'))
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 
-start_admin = ('Привет! Это чат администраторов поддержки Elmex. '
-             'Сюда будут приходить сообщения от клиентов.'
-             'Чтобы отправить ответ пользователя непосредственно ответить '
-             'на конкретное сообщение (свайп влево)')
-start_client = ('Здравствуйте! Это техподдержка Elmex '
-                'Отправьте любой тектовый вопрос')
+start_admin = ('Привет!👋 Это чат администраторов техподдержки Elmex.\n'
+             'Сюда будут приходить перенаправленные сообщения от клиентов бота @Elmex_Russia_Support_bot.\n'
+             'Чтобы отправить ответ пользователю, нужно непосредственно ответить '
+             'на конкретное сообщение (свайп влево ⬅ или после выделения сообщения нажать "Ответить"💬) ')
+start_client = ('Здравствуйте!👋 Это техподдержка Elmex.\n'
+                'Отправьте любой текcтовый вопрос❓')
 
 @dp.message(Command('start'))
 async def cmd_start(msg: Message):
-    if msg.chat.id == admin_chat_id:
+    if int(msg.chat.id) == admin_chat_id:
         await msg.answer(start_admin)
     else:
         await msg.answer(start_client)
@@ -37,16 +36,16 @@ async def cmd_getid(msg: Message):
 
 @dp.message()
 async def reply_message(msg: Message):
-    print(msg.chat.id)
-    if msg.chat.id == admin_chat_id:
-        chat_to_send = msg.reply_to_message.forward_from.id
-        if chat_to_send:
+    if int(msg.chat.id) == admin_chat_id:
+        try:
+            chat_to_send = msg.reply_to_message.forward_from.id
+        except AttributeError:
+            pass
+        else:
             answer = f'Сообщение от техподдержки:\n\n{msg.text}'
             await bot.send_message(text=answer, chat_id=chat_to_send)
             await msg.reply('Сообщение доставлено!')
-        else:
-            await msg.answer('Чтобы отправить сообщение клиенту, '
-                             'ответьте на сообщение (свайп влево)')
+
     else:
         await bot.forward_message(from_chat_id=msg.chat.id,
                                   chat_id=admin_chat_id,
