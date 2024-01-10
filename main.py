@@ -89,13 +89,13 @@ async def nom(message: Message, state: FSMContext):
             thing = thing[txt]
             if thing['url']:
                 await message.answer_photo(
-                    photo=FSInputFile(path=f"img/{thing['photo'][0]}.PNG"),
+                    photo=FSInputFile(path=f"data/{thing['photo'][0]}.PNG"),
                     caption=thing["Описание"],
                     reply_markup=board.btn_download(thing['url']).as_markup()
                 )
             else:
                 await message.answer_photo(
-                    photo=FSInputFile(path=f"img/{thing['photo'][0]}.PNG"),
+                    photo=FSInputFile(path=f"data/{thing['photo'][0]}.PNG"),
                     caption=thing["Описание"]
                 )
 
@@ -137,13 +137,13 @@ async def send_product(message: Message,
     else:
         if thing['url']:
             await message.answer_photo(
-                photo=FSInputFile(path=f"img/{thing['photo'][0]}.PNG"),
+                photo=FSInputFile(path=f"data/{thing['photo'][0]}.PNG"),
                 caption=thing["Описание"],
                 reply_markup=board.btn_download(thing['url']).as_markup()
             )
         else:
             await message.answer_photo(
-                photo=FSInputFile(path=f"img/{thing['photo'][0]}.PNG"),
+                photo=FSInputFile(path=f"data/{thing['photo'][0]}.PNG"),
                 caption=thing["Описание"]
             )
 
