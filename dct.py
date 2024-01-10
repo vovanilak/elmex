@@ -1,6 +1,6 @@
 import json
 
-with open('book.json', 'r') as file:
+with open('data/book.json', 'r') as file:
     book = json.load(file)
 
 ru = {
