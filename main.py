@@ -16,7 +16,7 @@ import board
 from aiogram.types import Message, FSInputFile
 
 load_dotenv()
-TOKEN=os.getenv('TOKEN_INFO_OF')
+TOKEN=os.getenv('TOKEN_INFO')
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 router = Router()

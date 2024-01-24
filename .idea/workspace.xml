@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8264de7e-ba9b-4cb2-af06-5d36748bcd7d" name="Changes" comment="improve support">
-      <change afterPath="$PROJECT_DIR$/keyboards/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Push.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Push.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Винт1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Винт1.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Винт2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Винт2.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Винтовая.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Винтовая.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Источники_питания.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Источники_питания.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Клемы.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Клемы.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Платы.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Платы.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Пружинные.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Пружинные.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/РЕЛЕ.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/РЕЛЕ.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Таймеры.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Таймеры.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Трансформаторы.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Трансформаторы.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Щелчковые_клеммы.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/data/img/Щелчковые_клеммы.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
