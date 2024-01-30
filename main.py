@@ -19,9 +19,9 @@ load_dotenv()
 TOKEN=os.getenv('TOKEN_INFO')
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
+
 router = Router()
 users = {}
-
 
 class Menu(StatesGroup):
     start = State()
