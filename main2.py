@@ -7,6 +7,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 from handlers import handlers
 from dotenv import load_dotenv
+#from data.db import create_db
 
 load_dotenv()
 
@@ -16,6 +17,7 @@ dp.include_router(handlers.router)
 
 async def main() -> None:
     bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
+    await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
 
