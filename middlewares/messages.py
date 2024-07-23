@@ -9,7 +9,7 @@ class DbLogMiddleware(BaseMiddleware):
                        handler,
                        event: types.Message,
                        data):
-        conn = sqlite3.connect('../messages.db')
+        conn = sqlite3.connect('./data/messages.db')
         cursor = conn.cursor()
 
         cursor.execute('''

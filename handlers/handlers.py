@@ -5,7 +5,7 @@ from keyboards import builder, inline
 from data import book
 from aiogram.enums.parse_mode import ParseMode
 from middlewares.messages import DbLogMiddleware
-from data.db import get_stat
+from data.db import stat
 
 router = Router()
 router.message.middleware(DbLogMiddleware())
@@ -17,13 +17,14 @@ async def cmd_start(message: Message):
 
 @router.message(Command('secretinfo'))
 async def cmd_getadminfo(message: Message):
-    result = await get_stat()
-    await message.answer(f'<b>Пользователи</b>\n'
+    result = stat('./data/messages.db')
+    await message.answer(str(result))
+    '''await message.answer(f'<b>Пользователи</b>\n'
                          f'Всего: {result[0]}\n'
                          f'Сегодня: {result[2]}\n'
                          f'Неделя: {result[4]}\n\n'
                          f'<b>Сообщения</b>\n'
-                         f'Сегодня: {result[1]}\n')
+                         f'Сегодня: {result[1]}\n')'''
 
 @router.message(F.text.in_(book.layers['menu']))
 async def menu(message: Message):

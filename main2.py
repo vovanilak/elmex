@@ -11,12 +11,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-TOKEN = getenv("MY_TOKEN")
+TOKEN = getenv("TOKEN_INFO")
 dp = Dispatcher()
 dp.include_router(handlers.router)
 
 async def main() -> None:
-    bot = Bot(TOKEN, parse_mode=ParseMode.HTML)
+    bot = Bot(TOKEN)
     await bot.delete_webhook(drop_pending_updates=True)
     await dp.start_polling(bot)
 
