@@ -154,8 +154,8 @@ def stat(db_path):
     def graph_db(df):
         df.set_index('date', inplace=True)
         weekly= pd.DataFrame()
-        weekly['Пользователи'] = df.drop_duplicates('user_id')['user_id'].resample('W').count()
         weekly['Сообщения'] = df.resample('W').count()['message_id']
+        weekly['Пользователи'] = df.resample('W').nunique()['user_id']
         weekly.reset_index(inplace=True)
         weekly = weekly.rename(columns={'date': 'Неделя'})
         return weekly
