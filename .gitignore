@@ -3,3 +3,15 @@
 .idea/
 data/messages.db
 data/messages2.db
+board.cpython-312.pyc
+dct.cpython-312.pyc
+data/__pycache__/
+handlers.cpython-312.pyc
+handlers/__pycache__/
+builder.cpython-312.pyc
+inline.cpython-312.pyc
+middlewares/__pycache__/
+messages.cpython-312.pyc
+.replit
+utils.cpython-312.pyc
+__init__.cpython-312.pyc
