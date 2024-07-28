@@ -13,7 +13,9 @@ def get_role(articul):
         else:
             result+=f'\n{yup[u]}\n{row[yup[u]]}'
     return result
-print(get_role(1103270240))
+
+if __name__ == "__main__":
+    print(get_role(1103270240))
 
 
 
