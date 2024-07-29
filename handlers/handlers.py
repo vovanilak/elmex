@@ -1,5 +1,5 @@
 from aiogram import Router, F
-from aiogram.types import Message, FSInputFile
+from aiogram.types import Message, FSInputFile, CallbackQuery
 from aiogram.filters import CommandStart, Command
 from data.info import get_role
 from keyboards import builder, inline
@@ -17,6 +17,13 @@ router.message.middleware(DbLogMiddleware())
 @router.message(CommandStart())
 async def cmd_start(message: Message):
     await message.answer(text='Здравствуйте👋 Выберите действие⬇',
+                         reply_markup=builder.reply_builder(
+                             book.layers['menu']))
+
+@router.callback_query(F.data == 'Меню')
+async def btn_start(call: CallbackQuery):
+    await call.answer()
+    await call.message.answer(text='Выберите действие⬇',
                          reply_markup=builder.reply_builder(
                              book.layers['menu']))
 
@@ -53,7 +60,7 @@ async def menu(message: Message):
 
     elif txt == lst[3]:
         for mes in book.menu[txt]:
-            await message.answer(text=mes, parse_mode=ParseMode.HTML)
+            await message.answer(text=mes, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
     elif txt == lst[4]:
         await message.answer(
@@ -67,7 +74,8 @@ async def menu(message: Message):
 @router.message(F.text.isdigit())
 async def inf(message: Message):
     iou = get_role(int(message.text))
-    await message.answer(iou)
+    await message.answer(iou, parse_mode=ParseMode.HTML)
+    await message.answer(text='Введите артикул или нажмите на кнопку для выхода', reply_markup=builder.inline(["Меню"]))
 
 @router.message(F.text.in_(book.nomen.keys()))
 async def select_product(message: Message):
